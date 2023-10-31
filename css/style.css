@@ -21,13 +21,7 @@ body {
 	background-size: cover;
 }
 
-#contenedor {
-	background: #0078D7;
-	width: 424px;
-	color: #FFFFFF;
-	padding: 15px;
-	font-family: 'Roboto', sans-serif;
-}
+/* Textos */
 
 h1 {
 	font-size: 80px;
@@ -43,4 +37,18 @@ h2 {
 a {
 	color: #FFFFFF;
 	text-decoration: none;
+}
+
+/* Clases especiales */
+
+#contenedor {
+	background: #0078D7;
+	width: 424px;
+	color: #FFFFFF;
+	padding: 15px;
+	font-family: 'Roboto', sans-serif;
+}
+
+#redes-sociales {
+	background: #FFFFFF;
 }
