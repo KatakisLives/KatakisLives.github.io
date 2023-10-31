@@ -7,15 +7,23 @@ Developed @ One Month
 
 */
 
+/* Cuerpo del HTML */
+
 body {
 	background: url('../images/1-scene.jpg');
-	
-	/* Lo siguiente es un código para hacer que la imágen se muestre como una página completa */
+
+	/* 
+		Lo siguiente es un código para hacer que la imágen se muestre como una 
+	    página completa 
+	*/
 	background-position: center;
 	background-attachment: fixed;
 	-webkit-background-size: cover;
-	
-	/* Las siguientes 3 líneas de código son "prefijos de navegador", que son necesarios de incluir para las técnicas de CSS3 */
+
+	/*
+		Las siguientes 3 líneas de código son "prefijos de navegador", que son 
+		necesarios de incluir para las técnicas de CSS3 
+	*/
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
