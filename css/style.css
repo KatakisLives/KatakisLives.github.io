@@ -39,8 +39,9 @@ body {
     font-style: normal;
 }
 
-h1 {
+.nombre-personal {
     font-size: 80px;
+    font-weight: bold;
 }
 
 h2 {
@@ -90,22 +91,14 @@ a {
     transition: transform 0.3s; /* Transición fluida para interacción */
 }
 
-.acrylic:hover {
-    transform: translate3d(
-        0,
-        -4px,
-        0
-    ); /* Un levitamiento mayor al mover el cursor del ratón */
-}
-
 .redes-sociales {
     margin: 8px;
-    padding: 8px;
 }
 
 .imagen-red-social {
     width: 32px;
     background-color: white;
+    margin-left: 2px;
     padding: 5px;
     border-radius: 25%;
 }
