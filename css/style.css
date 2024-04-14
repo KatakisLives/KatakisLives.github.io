@@ -31,6 +31,14 @@ body {
 
 /* Textos */
 
+@font-face {
+    font-family: "Selawik";
+    src: url("../fonts/winjs-symbols.woff2") format("woff2"),
+        url("../fonts/winjs-symbols.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
 h1 {
     font-size: 80px;
 }
@@ -43,23 +51,24 @@ h2 {
 }
 
 a {
-    color: #ffffff;
+    color: #0078d4;
     text-decoration: none;
 }
 
 /* Clases especiales */
 
 #contenedor {
-    /* background: #0078d7; */
+    border-radius: 8px;
     margin-top: 10px;
     margin-left: 10px;
     width: 424px;
-    color: #ffffff;
+    color: rgba(45, 45, 45, 1);
     padding: 15px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Selawik", "Roboto", sans-serif;
 
     /* 
-	    Parámetros tomados de https://copilot.microsoft.com/sl/h5SEkCX5mgu para 
+	    Parámetros tomados de https://copilot.microsoft.com/sl/h5SEkCX5mgu y 
+		https://copilot.microsoft.com/sl/c97jl0KD7ee para 
 	    aplicar un efecto de fondo simple al estilo de Fluent Design
 	 */
     background-color: rgba(
@@ -68,8 +77,25 @@ a {
         255,
         0.5
     ); /* Para ajustar color y opacidad */
-    -webkit-backdrop-filter: blur(10px); /* Para Safari y Edge */
+    -webkit-backdrop-filter: blur(10px); /* Sintaxis para Safari */
     backdrop-filter: blur(10px); /* Sintaxis estandar */
+
+    /* Floating effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para aplicar profundidad */
+    transform: translate3d(
+        0,
+        -2px,
+        0
+    ); /* Un leve levitamiento sobre la superficie */
+    transition: transform 0.3s; /* Transición fluida para interacción */
+}
+
+.acrylic:hover {
+    transform: translate3d(
+        0,
+        -4px,
+        0
+    ); /* Un levitamiento mayor al mover el cursor del ratón */
 }
 
 .redes-sociales {
