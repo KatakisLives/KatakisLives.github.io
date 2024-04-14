@@ -52,17 +52,22 @@ a {
 #contenedor {
     /* background: #0078d7; */
     margin-top: 10px;
-	margin-left: 10px;
-	width: 424px;
+    margin-left: 10px;
+    width: 424px;
     color: #ffffff;
     padding: 15px;
     font-family: "Roboto", sans-serif;
 
     /* 
 	 * Parámetros tomados de https://copilot.microsoft.com/sl/h5SEkCX5mgu para 
-	 * aplicar un efecto de fondo simple al estilo de Fluent Design*/
+	 * aplicar un efecto de fondo simple al estilo de Fluent Design
 	 */
-    background-color: rgba(255, 255, 255, 0.5); /* Para ajustar color y opacidad */
+    background-color: rgba(
+        255,
+        255,
+        255,
+        0.5
+    ); /* Para ajustar color y opacidad */
     -webkit-backdrop-filter: blur(10px); /* Para Safari y Edge */
     backdrop-filter: blur(10px); /* Sintaxis estandar */
 }
