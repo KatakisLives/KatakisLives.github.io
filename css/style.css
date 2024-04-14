@@ -3,60 +3,78 @@
 Nombre de proyecto: Página personal
 Autor: Fernando Fernández
 
-Developed @ One Month
+Developed @ One Month (https://www.microsoft.cl)
 
 */
 
 /* Cuerpo del HTML */
 
 body {
-	background: url('../images/laguna-mallplaza-oeste.jpg');
+    background: url("../images/laguna-mallplaza-oeste.jpg");
 
-	/* 
+    /* 
 		Lo siguiente es un código para hacer que la imágen se muestre como una 
 	    página completa 
 	*/
-	background-position: center;
-	background-attachment: fixed;
-	-webkit-background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
 
-	/*
+    /*
 		Las siguientes 3 líneas de código son "prefijos de navegador", que son 
 		necesarios de incluir para las técnicas de CSS3 
 	*/
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /* Textos */
 
 h1 {
-	font-size: 80px;
+    font-size: 80px;
 }
 
 h2 {
-	background: #FFFFFF;
-	color: #000000;
-	padding: 5px;
-	border-radius: 5px;
+    background: #ffffff;
+    color: #000000;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 a {
-	color: #FFFFFF;
-	text-decoration: none;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 /* Clases especiales */
 
 #contenedor {
-	background: #0078D7;
+    /* background: #0078d7; */
+    margin-top: 10px;
+	margin-left: 10px;
 	width: 424px;
-	color: #FFFFFF;
-	padding: 15px;
-	font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    padding: 15px;
+    font-family: "Roboto", sans-serif;
+
+    /* 
+	 * Parámetros tomados de https://copilot.microsoft.com/sl/h5SEkCX5mgu para 
+	 * aplicar un efecto de fondo simple al estilo de Fluent Design*/
+	 */
+    background-color: rgba(255, 255, 255, 0.5); /* Para ajustar color y opacidad */
+    -webkit-backdrop-filter: blur(10px); /* Para Safari y Edge */
+    backdrop-filter: blur(10px); /* Sintaxis estandar */
 }
 
-#redes-sociales {
-	background: #FFFFFF;
+.redes-sociales {
+    margin: 8px;
+    padding: 8px;
+}
+
+.imagen-red-social {
+    width: 32px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 25%;
 }
