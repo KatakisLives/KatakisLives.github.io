@@ -27,6 +27,12 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+    /*
+        Lo siguiente es una serie de técnicas para corregir el espaciado.
+    */
+
+    margin: 0px;
 }
 
 /* Textos */
@@ -39,16 +45,17 @@ body {
     font-style: normal;
 }
 
+.dato-personal {
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+    padding-block-start: 0em;
+    padding-block-end: 0.2em;
+}
+
 .nombre-personal {
     font-size: 80px;
     font-weight: bold;
-}
-
-h2 {
-    background: #ffffff;
-    color: #000000;
-    padding: 5px;
-    border-radius: 5px;
 }
 
 a {
@@ -59,13 +66,20 @@ a {
 /* Clases especiales */
 
 #contenedor {
-    border-radius: 8px;
-    margin-top: 10px;
-    margin-left: 10px;
+    /* Tamaño */
     width: 424px;
-    color: rgba(45, 45, 45, 1);
+    height: 100vh;
+
+    /* Espaciado */
+    border-radius: 0px;
     padding: 15px;
+
+    margin-top: 0px;
+    margin-left: 0px;
+
+    /* Texto */
     font-family: "Selawik", "Roboto", sans-serif;
+    color: rgba(45, 45, 45, 1);
 
     /* 
 	    Parámetros tomados de https://copilot.microsoft.com/sl/h5SEkCX5mgu y 
@@ -81,14 +95,8 @@ a {
     -webkit-backdrop-filter: blur(10px); /* Sintaxis para Safari */
     backdrop-filter: blur(10px); /* Sintaxis estandar */
 
-    /* Floating effect */
+    /* Efecto flotante */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para aplicar profundidad */
-    transform: translate3d(
-        0,
-        -2px,
-        0
-    ); /* Un leve levitamiento sobre la superficie */
-    transition: transform 0.3s; /* Transición fluida para interacción */
 }
 
 .redes-sociales {
